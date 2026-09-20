@@ -516,3 +516,198 @@ section {
     color: var(--color-acento);
     border-color: var(--color-acento);
 }
+
+/* Diseño responsive */
+@media (max-width: 900px) {
+
+    .hero-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-texto {
+        width: 100%;
+    }
+
+    .descripcion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-botones {
+        justify-content: center;
+    }
+
+    .hero-imagen {
+        width: 100%;
+    }
+
+    .tecnologias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-tecnologias {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sobre-mi-contenido {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .sobre-mi-texto,
+    .sobre-mi-info {
+        width: 100%;
+    }
+
+    .sobre-mi-info {
+        padding-left: 0;
+        padding-top: 25px;
+        border-left: none;
+        border-top: 1px solid #263247;
+    }
+
+    .habilidades-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-card {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-contenido {
+        flex-direction: column;
+    }
+
+    .contacto-texto,
+    .contacto-enlaces {
+        width: 100%;
+    }
+}
+
+/* Menú responsive */
+.menu-boton {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-texto);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .navegacion {
+        position: relative;
+    }
+
+    .menu-boton {
+        display: block;
+    }
+
+    .nav-enlaces {
+        display: none;
+
+        position: absolute;
+        top: 60px;
+        right: 0;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        background-color: var(--color-fondo-secundario);
+        padding: 20px;
+
+        border: 1px solid #263247;
+        border-radius: 8px;
+    }
+
+    .nav-enlaces.activo {
+        display: flex;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 7%;
+    }
+
+    section {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .hero-texto h1 {
+        font-size: 38px;
+    }
+
+    .hero-texto h2 {
+        font-size: 23px;
+    }
+
+    .saludo {
+        font-size: 24px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .hero-botones {
+        flex-wrap: wrap;
+    }
+
+    .foto-marco {
+        width: 280px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 30px;
+    }
+
+    .contacto-contenido {
+        padding: 25px;
+    }
+}
+
+/* Pie de página */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px 8%;
+    border-top: 1px solid #263247;
+
+    background-color: var(--color-fondo);
+}
+
+.footer-logo {
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.footer-logo span {
+    color: var(--color-acento);
+}
+
+.footer-texto,
+.footer-copy {
+    color: var(--color-texto-secundario);
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
