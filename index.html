@@ -12,42 +12,248 @@
 
 <body>
 
-    <header>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+    <header class="encabezado">
+    <nav class="navegacion">
+
+        <a href="#inicio" class="logo">
+            Carlos <span>Martinez</span>
+        </a>
+
+        <div class="nav-enlaces">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
     </nav>
 </header>
 
 <main>
 
-    <section id="inicio">
-        <h1>Carlos Martinez</h1>
-        <p>Bienvenido a mi portafolio personal.</p>
-    </section>
+    <section id="inicio" class="hero">
 
-    <section id="sobre-mi">
+    <div class="hero-contenido">
+
+        <div class="hero-texto">
+            <p class="saludo">Hola.</p>
+
+            <h1>Soy Carlos Martinez</h1>
+
+            <h2>Estudiante de Ingeniería de Sistemas</h2>
+
+            <p class="descripcion">
+                Actualmente me encuentro en formación en el desarrollo de software,
+                con interés por las tecnologías web y la creación de soluciones
+                prácticas y funcionales.
+            </p>
+
+            <div class="hero-botones">
+                <a href="#proyectos" class="boton boton-principal">
+                    Ver proyectos
+                </a>
+
+                <a href="#contacto" class="boton boton-secundario">
+                    Contacto
+                </a>
+            </div>
+        </div>
+
+       <div class="hero-imagen">
+
+    <div class="foto-marco">
+        <img src="assets/img/foto-perfil.jpeg"
+             alt="Foto de Carlos Martinez"
+             class="foto-perfil">
+    </div>
+
+</div>
+
+    </div>
+
+    <div class="tecnologias">
+        <p>Tecnologías que uso</p>
+
+        <div class="lista-tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+    </div>
+
+</section>
+
+    <section id="sobre-mi" class="sobre-mi">
+
+    <div class="titulo-seccion">
+        <span>01</span>
         <h2>Sobre mí</h2>
-        <p>Información personal próximamente.</p>
-    </section>
+    </div>
 
-    <section id="habilidades">
+    <div class="sobre-mi-contenido">
+
+        <div class="sobre-mi-texto">
+            <p>
+                Soy estudiante de Ingeniería de Sistemas y me interesa el desarrollo
+                de software y las tecnologías web. Me gusta aprender, resolver
+                problemas y trabajar en proyectos que me permitan aplicar y mejorar
+                mis conocimientos.
+            </p>
+
+            <p>
+                Actualmente continúo fortaleciendo mis habilidades en programación,
+                desarrollo web y herramientas como Git y GitHub, con el objetivo de
+                seguir creciendo académica y profesionalmente.
+            </p>
+        </div>
+
+        <div class="sobre-mi-info">
+
+            <div class="info-item">
+                <strong>Estudiante universitario</strong>
+                <span>Ingeniería de Sistemas</span>
+            </div>
+
+            <div class="info-item">
+                <strong>Área de interés</strong>
+                <span>Desarrollo de software y web</span>
+            </div>
+
+            <div class="info-item">
+                <strong>En constante aprendizaje</strong>
+                <span>Nuevas tecnologías y herramientas</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <section id="habilidades" class="habilidades">
+
+    <div class="titulo-seccion">
+        <span>02</span>
         <h2>Habilidades</h2>
-        <p>Mis habilidades y conocimientos.</p>
-    </section>
+    </div>
 
-    <section id="proyectos">
-        <h2>Mis proyectos</h2>
-        <p>Aquí estarán algunos de los proyectos que he desarrollado.</p>
-    </section>
+    <div class="habilidades-contenido">
 
-    <section id="contacto">
+        <article class="habilidad-card">
+            <h3>Desarrollo web</h3>
+            <p>
+                Creación de interfaces y páginas web utilizando
+                HTML, CSS y JavaScript.
+            </p>
+        </article>
+
+        <article class="habilidad-card">
+            <h3>Programación</h3>
+            <p>
+                Aplicación de lógica, algoritmos y resolución
+                de problemas mediante código.
+            </p>
+        </article>
+
+        <article class="habilidad-card">
+            <h3>Trabajo en equipo</h3>
+            <p>
+                Comunicación, organización y colaboración
+                durante el desarrollo de proyectos.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+   <!-- Sección Proyectos -->
+<section id="proyectos" class="proyectos">
+
+    <div class="titulo-seccion">
+        <span>03</span>
+        <h2>Proyectos</h2>
+    </div>
+
+    <div class="proyectos-contenido">
+
+        <article class="proyecto-card">
+
+            <div class="proyecto-imagen">
+                <div class="proyecto-placeholder">
+                    Vista previa del proyecto
+                </div>
+            </div>
+
+            <div class="proyecto-info">
+                <h3>Panel de administración</h3>
+
+                <p>
+                    Proyecto desarrollado con HTML, CSS y JavaScript para
+                    gestionar productos mediante un formulario y actualizar
+                    dinámicamente un catálogo.
+                </p>
+
+                <div class="proyecto-tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="proyecto-botones">
+                    <a href="#" class="boton boton-principal">
+                        Ver proyecto
+                    </a>
+
+                    <a href="#" class="boton boton-secundario">
+                        Ver código
+                    </a>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+  <!-- Sección Contacto -->
+<section id="contacto" class="contacto">
+
+    <div class="titulo-seccion">
+        <span>04</span>
         <h2>Contacto</h2>
-        <p>Información de contacto.</p>
-    </section>
+    </div>
+
+    <div class="contacto-contenido">
+
+        <div class="contacto-texto">
+            <h3>¿Quieres contactarme?</h3>
+
+            <p>
+                Puedes comunicarte conmigo a través de mi correo electrónico
+                o visitar mi perfil de GitHub para conocer mis proyectos.
+            </p>
+        </div>
+
+        <div class="contacto-enlaces">
+
+            <a href="mailto:TU_CORREO">
+                Correo electrónico
+            </a>
+
+            <a href="TU_ENLACE_GITHUB" target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 </main>
 
@@ -59,3 +265,4 @@
 </body>
 
 </html>
+

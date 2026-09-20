@@ -29,3 +29,490 @@ section {
 footer {
     padding: 20px;
 }
+
+:root {
+    --color-fondo: #111827;
+    --color-fondo-secundario: #182235;
+    --color-texto: #ffffff;
+    --color-texto-secundario: #aab2c0;
+    --color-acento: #ff5f57;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    background-color: var(--color-fondo);
+    padding: 22px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-texto);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--color-acento);
+}
+
+.nav-enlaces {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-enlaces a {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-enlaces a:hover {
+    color: var(--color-acento);
+}
+
+.hero {
+    padding-top: 40px;
+}
+
+.hero-contenido {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-texto {
+    width: 55%;
+}
+
+.saludo {
+    color: var(--color-texto);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.saludo::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--color-acento);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto h2 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 600px;
+    color: var(--color-texto-secundario);
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 15px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.boton-principal {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    border: 2px solid var(--color-acento);
+}
+
+.boton-principal:hover {
+    background-color: transparent;
+    color: var(--color-acento);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: var(--color-texto);
+    border: 2px solid var(--color-acento);
+}
+
+.boton-secundario:hover {
+    background-color: var(--color-acento);
+}
+
+.hero-imagen {
+    width: 40%;
+    min-height: 420px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-marco {
+    width: 350px;
+    aspect-ratio: 1 / 1;
+
+    border: 22px solid var(--color-acento);
+    border-radius: 50%;
+
+    overflow: hidden;
+    position: relative;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+.tecnologias {
+    margin-top: 20px;
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    border-top: 1px solid #263247;
+    border-bottom: 1px solid #263247;
+}
+
+.tecnologias > p {
+    color: var(--color-texto-secundario);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.lista-tecnologias {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.lista-tecnologias span {
+    color: var(--color-texto-secundario);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.lista-tecnologias span:hover {
+    color: var(--color-acento);
+}
+
+.sobre-mi {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.titulo-seccion span {
+    color: var(--color-acento);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.titulo-seccion span::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-acento);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.titulo-seccion h2 {
+    font-size: 34px;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.sobre-mi-texto {
+    width: 60%;
+}
+
+.sobre-mi-texto p {
+    color: var(--color-texto-secundario);
+    font-size: 17px;
+    margin-bottom: 18px;
+    max-width: 750px;
+}
+
+.sobre-mi-info {
+    width: 35%;
+    padding-left: 35px;
+    border-left: 1px solid #263247;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-item strong {
+    color: var(--color-texto);
+    font-size: 16px;
+}
+
+.info-item span {
+    color: var(--color-texto-secundario);
+    font-size: 14px;
+}
+
+.habilidades {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.habilidades-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.habilidad-card {
+    background-color: var(--color-fondo-secundario);
+    padding: 28px;
+    border: 1px solid #263247;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.habilidad-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-acento);
+}
+
+.habilidad-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.habilidad-card p {
+    color: var(--color-texto-secundario);
+    font-size: 15px;
+}
+
+/* Estilos de la sección Proyectos */
+.proyectos {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Contenedor de los proyectos */
+.proyectos-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Tarjeta principal del proyecto */
+.proyecto-card {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+
+    background-color: var(--color-fondo-secundario);
+    border: 1px solid #263247;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Zona de la imagen del proyecto */
+.proyecto-imagen {
+    min-height: 280px;
+}
+
+/* Espacio provisional para la captura */
+.proyecto-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0d1522;
+    color: var(--color-texto-secundario);
+
+    border: 1px dashed #3a465b;
+    border-radius: 8px;
+}
+
+/* Información del proyecto */
+.proyecto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proyecto-info h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.proyecto-info p {
+    color: var(--color-texto-secundario);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas de tecnologías */
+.proyecto-tecnologias {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.proyecto-tecnologias span {
+    padding: 6px 12px;
+
+    color: var(--color-texto-secundario);
+    border: 1px solid #3a465b;
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+/* Botones del proyecto */
+.proyecto-botones {
+    display: flex;
+    gap: 15px;
+}
+
+/* Sección Contacto */
+.contacto {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.contacto-contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    background-color: var(--color-fondo-secundario);
+    border: 1px solid #263247;
+    border-radius: 12px;
+
+    padding: 35px;
+}
+
+.contacto-texto {
+    width: 60%;
+}
+
+.contacto-texto h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.contacto-texto p {
+    color: var(--color-texto-secundario);
+    font-size: 16px;
+    max-width: 650px;
+}
+
+.contacto-enlaces {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contacto-enlaces a {
+    color: var(--color-texto);
+    text-decoration: none;
+
+    padding: 12px 18px;
+
+    border: 1px solid #3a465b;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.contacto-enlaces a:hover {
+    color: var(--color-acento);
+    border-color: var(--color-acento);
+}
