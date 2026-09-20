@@ -12,22 +12,79 @@
 
 <body>
 
-    <header>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+    <header class="encabezado">
+    <nav class="navegacion">
+
+        <a href="#inicio" class="logo">
+            Carlos <span>Martinez</span>
+        </a>
+
+        <div class="nav-enlaces">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
     </nav>
 </header>
 
 <main>
 
-    <section id="inicio">
-        <h1>Carlos Martinez</h1>
-        <p>Bienvenido a mi portafolio personal.</p>
-    </section>
+    <section id="inicio" class="hero">
+
+    <div class="hero-contenido">
+
+        <div class="hero-texto">
+            <p class="saludo">Hola.</p>
+
+            <h1>Soy Carlos Martinez</h1>
+
+            <h2>Estudiante de Ingeniería de Sistemas</h2>
+
+            <p class="descripcion">
+                Actualmente me encuentro en formación en el desarrollo de software,
+                con interés por las tecnologías web y la creación de soluciones
+                prácticas y funcionales.
+            </p>
+
+            <div class="hero-botones">
+                <a href="#proyectos" class="boton boton-principal">
+                    Ver proyectos
+                </a>
+
+                <a href="#contacto" class="boton boton-secundario">
+                    Contacto
+                </a>
+            </div>
+        </div>
+
+       <div class="hero-imagen">
+
+    <div class="foto-marco">
+        <img src="assets/img/foto-perfil.jpeg"
+             alt="Foto de Carlos Martinez"
+             class="foto-perfil">
+    </div>
+
+</div>
+
+    </div>
+
+    <div class="tecnologias">
+        <p>Tecnologías que uso</p>
+
+        <div class="lista-tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+    </div>
+
+</section>
 
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
@@ -59,3 +116,4 @@
 </body>
 
 </html>
+
