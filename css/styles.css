@@ -202,13 +202,18 @@ section {
     width: 350px;
     aspect-ratio: 1 / 1;
 
-    border: 22px solid var(--color-acento);
+    border: 10px solid var(--color-acento);
+    padding: 5px;
     border-radius: 50%;
+
+    background-color: var(--color-fondo-secundario);
 
     overflow: hidden;
     position: relative;
 
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    box-shadow:
+        0 0 0 1px #263247,
+        0 12px 35px rgba(0, 0, 0, 0.35);
 }
 
 .foto-perfil {
@@ -219,6 +224,7 @@ section {
     object-position: center;
 
     display: block;
+    border-radius: 50%;
 }
 
 .tecnologias {
@@ -256,20 +262,35 @@ section {
     transition: 0.3s;
 }
 
+/* Iconos de tecnologías */
+.tecnologia-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tecnologia-item i {
+    font-size: 26px;
+}
+
+.tecnologia-item .devicon-github-original {
+    color: var(--color-texto);
+}
+
 .lista-tecnologias span:hover {
     color: var(--color-acento);
 }
 
 .sobre-mi {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
 .titulo-seccion {
     display: flex;
     align-items: center;
     gap: 18px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .titulo-seccion span {
@@ -336,8 +357,8 @@ section {
 }
 
 .habilidades {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .habilidades-contenido {
@@ -372,8 +393,8 @@ section {
 
 /* Estilos de la sección Proyectos */
 .proyectos {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 /* Contenedor de los proyectos */
@@ -414,6 +435,15 @@ section {
     color: var(--color-texto-secundario);
 
     border: 1px dashed #3a465b;
+    border-radius: 8px;
+}
+
+/* Captura del proyecto */
+.proyecto-captura {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -460,14 +490,14 @@ section {
 
 /* Sección Contacto */
 .contacto {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 .contacto-contenido {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 40px;
 
     background-color: var(--color-fondo-secundario);
     border: 1px solid #263247;

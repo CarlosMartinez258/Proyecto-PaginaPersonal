@@ -7,6 +7,11 @@
 
     <title>Portafolio | Carlos Martinez</title>
 
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    >
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -42,16 +47,14 @@
     <div class="hero-contenido">
 
         <div class="hero-texto">
-            <p class="saludo">Hola.</p>
+            <p class="saludo">Ingeniería de Sistemas · Desarrollo de software.</p>
 
-            <h1>Soy Carlos Martinez</h1>
+            <h1>Ideas que se convierten en soluciones</h1>
 
             <h2>Estudiante de Ingeniería de Sistemas</h2>
 
             <p class="descripcion">
-                Actualmente me encuentro en formación en el desarrollo de software,
-                con interés por las tecnologías web y la creación de soluciones
-                prácticas y funcionales.
+                Me interesa construir proyectos funcionales, explorar nuevas tecnologías y seguir fortaleciendo mis conocimientos en programación y desarrollo web.
             </p>
 
             <div class="hero-botones">
@@ -77,17 +80,34 @@
 
     </div>
 
-    <div class="tecnologias">
-        <p>Tecnologías que uso</p>
+<div class="lista-tecnologias">
 
-        <div class="lista-tecnologias">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Git</span>
-            <span>GitHub</span>
-        </div>
-    </div>
+    <span class="tecnologia-item">
+        <i class="devicon-html5-plain colored"></i>
+        HTML
+    </span>
+
+    <span class="tecnologia-item">
+        <i class="devicon-css3-plain colored"></i>
+        CSS
+    </span>
+
+    <span class="tecnologia-item">
+        <i class="devicon-javascript-plain colored"></i>
+        JavaScript
+    </span>
+
+    <span class="tecnologia-item">
+        <i class="devicon-git-plain colored"></i>
+        Git
+    </span>
+
+    <span class="tecnologia-item">
+        <i class="devicon-github-original"></i>
+        GitHub
+    </span>
+
+</div>
 
 </section>
 
@@ -102,16 +122,18 @@
 
         <div class="sobre-mi-texto">
             <p>
-                Soy estudiante de Ingeniería de Sistemas y me interesa el desarrollo
-                de software y las tecnologías web. Me gusta aprender, resolver
-                problemas y trabajar en proyectos que me permitan aplicar y mejorar
-                mis conocimientos.
+                Soy estudiante de Ingeniería de Sistemas con interés en el desarrollo de
+                software y en la manera en que la tecnología puede utilizarse para resolver
+                problemas reales. Durante mi formación he trabajado en diferentes proyectos
+                académicos que me han permitido fortalecer conocimientos en programación,
+                desarrollo web y herramientas para el trabajo colaborativo.
             </p>
 
             <p>
-                Actualmente continúo fortaleciendo mis habilidades en programación,
-                desarrollo web y herramientas como Git y GitHub, con el objetivo de
-                seguir creciendo académica y profesionalmente.
+                Me interesa seguir aprendiendo, enfrentar nuevos retos y convertir ideas en
+                soluciones cada vez más completas. Fuera del ámbito académico disfruto
+                practicar fútbol, mantenerme activo, conocer nuevas tecnologías y dedicar
+                tiempo a actividades que aporten a mi crecimiento personal y profesional.
             </p>
         </div>
 
@@ -136,9 +158,7 @@
 
     </div>
 
-</section>
-
- <section id="habilidades" class="habilidades">
+<section id="habilidades" class="habilidades">
 
     <div class="titulo-seccion">
         <span>02</span>
@@ -164,10 +184,34 @@
         </article>
 
         <article class="habilidad-card">
+            <h3>Git y GitHub</h3>
+            <p>
+                Uso de control de versiones, ramas, commits y
+                repositorios para organizar el desarrollo de proyectos.
+            </p>
+        </article>
+
+        <article class="habilidad-card">
+            <h3>Resolución de problemas</h3>
+            <p>
+                Análisis de situaciones, identificación de necesidades
+                y búsqueda de soluciones prácticas mediante tecnología.
+            </p>
+        </article>
+
+        <article class="habilidad-card">
             <h3>Trabajo en equipo</h3>
             <p>
-                Comunicación, organización y colaboración
-                durante el desarrollo de proyectos.
+                Comunicación, organización y colaboración durante
+                el desarrollo de proyectos académicos y tecnológicos.
+            </p>
+        </article>
+
+        <article class="habilidad-card">
+            <h3>Aprendizaje continuo</h3>
+            <p>
+                Interés constante por nuevas tecnologías, herramientas
+                y conocimientos que fortalezcan mi formación profesional.
             </p>
         </article>
 
@@ -188,13 +232,15 @@
         <article class="proyecto-card">
 
             <div class="proyecto-imagen">
-                <div class="proyecto-placeholder">
-                    Vista previa del proyecto
-                </div>
+                <img
+                    src="assets/img/panel-administracion.jpeg"
+                    alt="Vista previa del Panel de administración"
+                    class="proyecto-captura"
+                >
             </div>
 
             <div class="proyecto-info">
-                <h3>Panel de administración</h3>
+                <h3>Tienda Web</h3>
 
                 <p>
                     Proyecto desarrollado con HTML, CSS y JavaScript para
@@ -221,6 +267,35 @@
 
         </article>
 
+        <article class="proyecto-card">
+
+            <div class="proyecto-imagen">
+                <div class="proyecto-placeholder">
+                    Próximo proyecto
+                </div>
+            </div>
+
+            <div class="proyecto-info">
+                <h3>Próximo proyecto</h3>
+
+                <p>
+                    Espacio reservado para nuevos desarrollos, retos académicos
+                    y proyectos que seguirán ampliando este portafolio.
+                </p>
+
+                <div class="proyecto-tecnologias">
+                    <span>Próximamente</span>
+                </div>
+
+                <div class="proyecto-botones">
+                    <span class="boton boton-secundario">
+                        En desarrollo
+                    </span>
+                </div>
+            </div>
+
+        </article>
+
     </div>
 
 </section>
@@ -236,22 +311,24 @@
     <div class="contacto-contenido">
 
         <div class="contacto-texto">
-            <h3>¿Quieres contactarme?</h3>
+            <h3>Conectemos</h3>
 
             <p>
-                Puedes comunicarte conmigo a través de mi correo electrónico
-                o visitar mi perfil de GitHub para conocer mis proyectos.
+                Estoy abierto a compartir ideas, colaborar en proyectos y seguir
+                construyendo experiencia en el desarrollo de software. Si quieres
+                conocer más sobre mi trabajo o ponerte en contacto conmigo, puedes
+                hacerlo a través de los siguientes medios.
             </p>
         </div>
 
         <div class="contacto-enlaces">
 
             <a href="mailto:martinezcalvache@unicauca.edu.co">
-            Correo electrónico
+                Correo electrónico
             </a>
 
             <a href="https://github.com/CarlosMartinez258" target="_blank">
-             GitHub
+                GitHub
             </a>
 
         </div>
@@ -266,20 +343,20 @@
 <footer class="footer">
 
     <p class="footer-logo">
-        Carlos <span>Martinez</span>
+        Portafolio <span>personal</span>
     </p>
 
     <p class="footer-texto">
-        Aprendiendo, creando y desarrollando nuevas ideas.
+        Aprendiendo, construyendo y convirtiendo ideas en soluciones.
     </p>
 
     <p class="footer-copy">
-        © 2026 Carlos Martinez
+        © 2026 · Ingeniería de Sistemas
     </p>
 
 </footer>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
